@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-	baseURL: process.env.VUE_APP_API_HOSTNAME,
+	baseURL: 'https://api.covid19api.com/'
 });
 
 export default axiosInstance;
