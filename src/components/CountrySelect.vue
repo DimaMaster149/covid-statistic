@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="country-select">
     <v-select v-model="currentCountry"
       :hide-details="true"
       solo
@@ -45,3 +45,9 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.country-select {
+  width: 250px;
+  height: auto;
+}
+</style>

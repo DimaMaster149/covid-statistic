@@ -5,8 +5,8 @@ export const fetchCountries = async ({ commit }) => {
   commit('setCountries', response.data);
 };
 
-export const fetchStatisticFromDayOne = async ({ commit }, { country, status }) => {
-  const response = await axios.get(`https://api.covid19api.com/dayone/country/${country}/status/${status}`);
+export const fetchStatisticFromDayOne = async ({ commit }, { country }) => {
+  const response = await axios.get(`https://api.covid19api.com/dayone/country/${country}`);
   commit('setStatistic', response.data);
 };
 

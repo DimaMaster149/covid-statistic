@@ -9,8 +9,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     countries: [],
-    statistic: null,
-    statisticLive: null,
+    statistic: [],
+    statisticLive: [],
   },
   mutations,
   actions,
